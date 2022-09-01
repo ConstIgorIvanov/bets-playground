@@ -1,0 +1,18 @@
+@import './variables';
+@import './components/app';
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  background: $background;
+  color: $white;
+  font-size: $font-medium;
+}
+
+.wrapper {
+  max-width: 1300px;
+  min-width: 960px;
+  width: 98%;
+  padding: 0 1%;
+  margin: 0 auto;
+}
