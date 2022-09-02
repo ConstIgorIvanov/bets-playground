@@ -16,15 +16,6 @@ function App() {
       <div className="footer">
         <Footer />
       </div>
-      <Button fontSize="small" task="default" activeColor={true} hoverGreen={false}>
-        пополнить
-      </Button>
-      <Button fontSize="small" task="bet" activeColor={true} hoverGreen={false}>
-        пополнить
-      </Button>
-      <Button fontSize="small" task="watch" activeColor={true} hoverGreen={false}>
-        пополнить
-      </Button>
     </div>
   );
 }
