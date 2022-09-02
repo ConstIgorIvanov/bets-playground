@@ -6,5 +6,5 @@ export interface ButtonProps
   fontSize: 'small' | 'medium';
   activeColor: boolean;
   hoverGreen: boolean;
-  direction: 'default' | 'watch' | 'bet';
+  task: 'default' | 'watch' | 'bet';
 }
