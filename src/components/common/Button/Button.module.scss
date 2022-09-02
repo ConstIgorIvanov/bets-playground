@@ -1,0 +1,38 @@
+.button {
+  color: #ebf0f6;
+  font-size: 12px;
+  transition: all 0.2s ease;
+  padding: 0 7px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  min-height: 20px;
+}
+
+.hoverDefault:hover {
+  background-color: #454a57;
+}
+.hoverGreen:hover {
+  background-color: #77bd4b;
+}
+
+.bgDefault {
+  background: #343a45;
+}
+.bgGreen {
+  background-color: #77bd4b;
+}
+
+.active:active {
+  background: #944237;
+}
+
+.fontSmall {
+  font-size: 12px;
+}
+
+.fontMedium {
+  font-size: 14px;
+}
