@@ -14,6 +14,7 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <button
+      {...props}
       className={cn(styles.button, {
         [styles.fontSmall]: fontSize === 'small',
         [styles.fontMedium]: fontSize === 'medium',

@@ -16,9 +16,6 @@ function App() {
       <div className="footer">
         <Footer />
       </div>
-      <Button fontSize="small" activeColor={true} hoverColor="default" backgroundColor="default">
-        Hello
-      </Button>
     </div>
   );
 }
