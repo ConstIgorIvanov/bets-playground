@@ -7,9 +7,9 @@ import styles from './Button.module.scss';
 const Button = ({
   children,
   activeColor,
-  hoverColor,
+  hoverGreen,
   fontSize,
-  backgroundColor,
+  direction,
   ...props
 }: ButtonProps) => {
   return (
@@ -19,10 +19,10 @@ const Button = ({
         [styles.fontSmall]: fontSize === 'small',
         [styles.fontMedium]: fontSize === 'medium',
         [styles.active]: activeColor,
-        [styles.hoverDefault]: hoverColor === 'default',
-        [styles.hoverGreen]: hoverColor === 'green',
-        [styles.bgDefault]: backgroundColor === 'default',
-        [styles.bgGreen]: backgroundColor === 'green',
+        [styles.hoverGreen]: hoverGreen,
+        [styles.default]: direction === 'default',
+        [styles.bet]: direction === 'bet',
+        [styles.watch]: direction === 'watch',
       })}>
       {children}
     </button>

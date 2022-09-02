@@ -11,17 +11,28 @@
   min-height: 20px;
 }
 
-.hoverDefault:hover {
-  background-color: #454a57;
+.default {
+  background: #343a45;
+  text-transform: lowercase;
+  &:hover {
+    background-color: #454a57;
+  }
 }
-.hoverGreen:hover {
+
+.bet {
   background-color: #77bd4b;
 }
 
-.bgDefault {
-  background: #343a45;
+.watch {
+  color: #944237;
+  border: 1px solid #944237;
+  background-color: rgb(46 53 61);
+  &:hover {
+    background-color: #944237;
+    color: #ebf0f6;
+  }
 }
-.bgGreen {
+.hoverGreen:hover {
   background-color: #77bd4b;
 }
 

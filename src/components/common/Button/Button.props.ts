@@ -5,6 +5,6 @@ export interface ButtonProps
   children: ReactNode;
   fontSize: 'small' | 'medium';
   activeColor: boolean;
-  hoverColor: 'default' | 'green';
-  backgroundColor: 'default' | 'green';
+  hoverGreen: boolean;
+  direction: 'default' | 'watch' | 'bet';
 }
