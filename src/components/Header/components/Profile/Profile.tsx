@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ProfileI } from './Profile.props';
 import styles from './Profile.module.scss';
-import Button from '../../common/Button/Button';
+import Button from '../../../common/Button/Button';
 
 const testImgUrl =
   'https://sun9-58.userapi.com/s/v1/if1/7KNLKM7lUd64xizfJQPFAiRX-z2t1GYdq2NV5ZcooZZXo4x5qhSwasZVt6YxTwhnumavEkAx.jpg?size=400x400&quality=96&crop=0,0,570,570&ava=1';
