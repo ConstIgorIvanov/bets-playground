@@ -1,0 +1,67 @@
+$light-gray: #a6a6a6;
+$UIgreen: #13bf11;
+
+.switch {
+  display: inline-block;
+  margin: 10px 10px;
+
+  input {
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+    pointer-event: none;
+
+    & + label {
+      display: block;
+      position: relative;
+      box-shadow: inset 0 0 0px 1px $light-gray;
+      text-indent: -5000px;
+      height: 30px;
+      width: 50px;
+      border-radius: 15px;
+    }
+
+    & + label:before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 30px;
+      width: 30px;
+      top: 0;
+      left: 0;
+      border-radius: 15px;
+      background: transparent;
+      -moz-transition: 0.2s ease-in-out;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out;
+    }
+
+    & + label:after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 30px;
+      width: 30px;
+      top: 0;
+      left: 0px;
+      border-radius: 15px;
+      background: white;
+      box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+      -moz-transition: 0.2s ease-in-out;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out;
+    }
+
+    &:checked + label:before {
+      width: 50px;
+      background: $UIgreen;
+    }
+
+    &:checked + label:after {
+      left: 20px;
+      box-shadow: inset 0 0 0 1px $UIgreen, 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
