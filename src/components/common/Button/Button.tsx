@@ -4,7 +4,14 @@ import { ButtonProps } from './Button.props';
 
 import styles from './Button.module.scss';
 
-const Button = ({ children, activeColor, hoverGreen, fontSize, task, ...props }: ButtonProps) => {
+const Button = ({
+  children,
+  hoverGreen,
+  fontSize,
+  task = 'default',
+  activeColor,
+  ...props
+}: ButtonProps) => {
   return (
     <button
       {...props}
