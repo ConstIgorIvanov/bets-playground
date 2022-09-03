@@ -7,4 +7,5 @@ export interface ButtonProps
   activeColor?: boolean;
   hoverGreen?: boolean;
   task?: 'default' | 'watch' | 'bet';
+  active?: boolean;
 }

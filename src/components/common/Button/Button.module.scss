@@ -37,8 +37,11 @@
   background-color: #77bd4b;
 }
 
-.active:active {
+.activeColor:active {
   background: #944237;
+}
+.active {
+  background: #77bd4b;
 }
 
 .fontSmall {

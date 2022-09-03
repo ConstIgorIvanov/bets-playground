@@ -10,6 +10,7 @@ const Button = ({
   fontSize,
   task = 'default',
   activeColor,
+  active,
   ...props
 }: ButtonProps) => {
   return (
@@ -18,11 +19,12 @@ const Button = ({
       className={cn(styles.button, {
         [styles.fontSmall]: fontSize === 'small',
         [styles.fontMedium]: fontSize === 'medium',
-        [styles.active]: activeColor,
+        [styles.activeColor]: activeColor,
         [styles.hoverGreen]: hoverGreen,
         [styles.default]: task === 'default',
         [styles.bet]: task === 'bet',
         [styles.watch]: task === 'watch',
+        [styles.active]: active,
       })}>
       {children}
     </button>
