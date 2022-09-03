@@ -7,15 +7,9 @@ import Header from './components/Header';
 function App() {
   return (
     <div className="full-wrapper">
-      <div className="header">
-        <Header />
-      </div>
-      <div className="content">
-        <Content />
-      </div>
-      <div className="footer">
-        <Footer />
-      </div>
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
