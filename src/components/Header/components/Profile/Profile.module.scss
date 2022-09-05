@@ -1,6 +1,6 @@
 .profile {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display: flex;
+
   &__left {
     margin-right: 25px;
   }
@@ -13,6 +13,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+    gap: 5px;
   }
   .profile__text {
     margin-right: 10px;
@@ -79,6 +80,28 @@
     align-items: center;
     &:hover {
       color: #fff;
+    }
+  }
+
+  .plus,
+  .minus {
+    display: none;
+  }
+
+  @media (max-width: 1000px) {
+    .profile__buttons {
+      display: none;
+    }
+    .button {
+      display: none;
+    }
+    .plus,
+    .minus {
+      display: block;
+    }
+    &__money,
+    &__stone {
+      grid-template-columns: 5fr 1fr;
     }
   }
 }

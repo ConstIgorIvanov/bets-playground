@@ -23,14 +23,18 @@ const Profile = (props: ProfileI) => {
               <a href="#"> вывести</a>
             </Button>
           </div>
+          <div className={styles.plus}>+</div>
         </div>
         <div className={styles.profile__stone}>
           <div className={styles.profile__text}>
             <span>Камни:</span>1200
           </div>
-          <Button fontSize="small" activeColor className={styles.button}>
-            <a href="#"> потратить</a>
-          </Button>
+          <div className={styles.button}>
+            <Button fontSize="small" activeColor className={styles.button}>
+              <a href="#"> потратить</a>
+            </Button>
+          </div>
+          <div className={styles.minus}> - </div>
         </div>
       </div>
       <div className={styles.profile__right}>
