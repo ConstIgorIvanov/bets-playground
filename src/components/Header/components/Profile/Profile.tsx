@@ -23,7 +23,12 @@ const Profile = (props: ProfileI) => {
               <a href="#"> вывести</a>
             </Button>
           </div>
-          <div className={styles.plus}>+</div>
+          <div className={styles.plus}>
+            {' '}
+            <Button fontSize="small" activeColor className={styles.button}>
+              <a href="#"> + </a>
+            </Button>{' '}
+          </div>
         </div>
         <div className={styles.profile__stone}>
           <div className={styles.profile__text}>
@@ -34,7 +39,11 @@ const Profile = (props: ProfileI) => {
               <a href="#"> потратить</a>
             </Button>
           </div>
-          <div className={styles.minus}> - </div>
+          <div className={styles.minus}>
+            <Button fontSize="small" activeColor className={styles.button}>
+              <a href="#"> - </a>
+            </Button>{' '}
+          </div>
         </div>
       </div>
       <div className={styles.profile__right}>
