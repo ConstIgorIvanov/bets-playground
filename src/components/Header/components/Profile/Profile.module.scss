@@ -18,7 +18,7 @@
   .profile__text {
     margin-right: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
   }
   .profile__text > span {
     color: #b0b3b9;
@@ -84,19 +84,23 @@
   }
 
   .plus,
-  .minus {
+  .minus,
+  .profile__info__btn {
     display: none;
   }
 
-  @media (max-width: 1000px) {
-    .profile__buttons {
-      display: none;
-    }
+  @media (max-width: 750px) {
+    .profile__buttons,
+    &__info,
     .button {
       display: none;
     }
+
     .plus,
+    .profile__info__btn,
     .minus {
+      height: 100%;
+      width: 100%;
       display: block;
     }
     &__money,

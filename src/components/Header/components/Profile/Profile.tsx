@@ -55,6 +55,13 @@ const Profile = (props: ProfileI) => {
           <div className={styles.profile__name}>arrogance</div>
           <div className={styles.profile__bets}>Мои ставки</div>
         </div>
+        <div className={styles.profile__info__btn}>
+          <Button fontSize="small" activeColor className={styles.button}>
+            <a href="#">
+              <img src="https://csgopositive.co/template_v2/img_v2/bet_icon_mobile.png?v2" />
+            </a>
+          </Button>
+        </div>
       </div>
     </div>
   );
