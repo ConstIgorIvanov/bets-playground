@@ -23,6 +23,11 @@ body {
     min-width: 400px;
   }
 }
+@media (max-width: 550px) {
+  .wrapper {
+    min-width: 373px;
+  }
+}
 
 .container {
   display: grid;
