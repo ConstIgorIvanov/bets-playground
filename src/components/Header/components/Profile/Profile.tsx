@@ -53,7 +53,9 @@ const Profile = (props: ProfileI) => {
         </div>
         <div className={styles.profile__info}>
           <div className={styles.profile__name}>arrogance</div>
-          <div className={styles.profile__bets}>Мои ставки</div>
+          <div className={styles.profile__bets}>
+            <a href="#">Мои ставки</a>
+          </div>
         </div>
         <div className={styles.profile__info__btn}>
           <Button fontSize="small" activeColor className={styles.button}>
