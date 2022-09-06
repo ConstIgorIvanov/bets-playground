@@ -17,6 +17,7 @@ const Button = ({
     <button
       {...props}
       className={cn(styles.button, {
+        [styles.extraSmall]: fontSize === 'extra-small',
         [styles.fontSmall]: fontSize === 'small',
         [styles.fontMedium]: fontSize === 'medium',
         [styles.activeColor]: activeColor,
@@ -24,6 +25,7 @@ const Button = ({
         [styles.default]: task === 'default',
         [styles.bet]: task === 'bet',
         [styles.watch]: task === 'watch',
+        [styles.icon]: task === 'icon',
         [styles.active]: active,
       })}>
       {children}

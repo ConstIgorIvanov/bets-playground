@@ -9,23 +9,28 @@
   cursor: pointer;
   border: none;
   min-height: 20px;
-  max-width: 250px;
-  height: 100%;
-  width: 100%;
 }
 
 .default {
   background: #343a45;
   text-transform: lowercase;
+  height: 100%;
+  width: 100%;
   &:hover {
     background-color: #454a57;
   }
 }
 
+.icon {
+  background: #343a45;
+  text-transform: lowercase;
+  height: 100%;
+}
+
 .bet {
   background-color: #77bd4b;
 }
-//test
+
 .watch {
   color: #944237;
   border: 1px solid #944237;
@@ -44,6 +49,10 @@
 }
 .active {
   background: #77bd4b;
+}
+
+.extraSmall {
+  font-size: 10px;
 }
 
 .fontSmall {
