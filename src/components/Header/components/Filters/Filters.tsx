@@ -59,10 +59,12 @@ const Filters = (props: FiltersI) => {
         </div>
         <div className={styles.select__options}>
           {games.map((games, index) => (
-            <div key={index} className={styles.select__option}>
-              <label htmlFor="filter"></label>
+            <div
+              key={index}
+              className={styles.select__option}
+              onClick={() => changeGames(games.name)}>
               <div className={styles.select__title}>{games.name}</div>
-              <div onClick={() => changeGames(games.name)}>
+              <div>
                 <Switch name={games.name} checked={games.checked} />
               </div>
             </div>
