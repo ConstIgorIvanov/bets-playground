@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FiltersI } from './Filters.props';
 import styles from './Filters.module.scss';
-import Switch from './components/Switch/Switch';
+import Switch from '../Switch/Switch';
 import Button from '../../../common/Button/Button';
 
 const fakeState = {
@@ -42,10 +42,10 @@ const Filters = (props: FiltersI) => {
           <p className={styles.select__text}>
             <div className={styles.select__text__title}>Фильтр по играм:</div>
             <div>
-              {games.map((game) => {
+              {games.map((game, idx) => {
                 if (game.checked) {
                   return (
-                    <div className={styles.select__text__item}>
+                    <div key={idx} className={styles.select__text__item}>
                       <Button fontSize="extra-small" task="icon">
                         {game.name}
                       </Button>
