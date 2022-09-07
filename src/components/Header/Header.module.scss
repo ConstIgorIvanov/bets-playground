@@ -5,3 +5,9 @@
   align-items: center;
   padding: 5px 0px;
 }
+
+@media (max-width: 550px) {
+  .header {
+    justify-content: center;
+  }
+}
