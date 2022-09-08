@@ -4,18 +4,22 @@ import cn from 'classnames';
 
 import { UpcomingTeamCardI } from './UpcomingTeamCard.props';
 
-const UpcomingTeamCard = (props: UpcomingTeamCardI) => {
+const UpcomingTeamCard = ({ direction, odd, teamname }: UpcomingTeamCardI) => {
   return (
-    <div className={cn()}>
-      <div>
-        <img src="" alt="team logo" />
-        <div></div>
+    <div
+      className={cn(styles.wrapper, {
+        [styles.left]: direction === 'left',
+        [styles.right]: direction === 'right',
+      })}>
+      <div className={styles.imgContainer}>
+        <img className={styles.img} src="" alt="team logo" />
+        <div className={styles.imgMask}>+</div>
       </div>
-      <div>
-        <div>Team Name</div>
-        <div>1.8</div>
+      <div className={styles.teamInfo}>
+        <div className={styles.teamName}>{teamname}</div>
+        <div className={styles.teamOdd}>{odd}</div>
       </div>
-      <div></div>
+      <div className={styles.mask}></div>
     </div>
   );
 };
