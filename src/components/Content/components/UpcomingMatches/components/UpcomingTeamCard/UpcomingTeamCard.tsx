@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './MatchesItem.module.scss';
+import styles from './UpcomingTeamCard.module.scss';
 import cn from 'classnames';
 
 import { UpcomingTeamCardI } from './UpcomingTeamCard.props';
 
-const UpcomingTeamCard = ({ direction, odd, teamname }: UpcomingTeamCardI) => {
+const UpcomingTeamCard = ({ direction, odd, teamname, img }: UpcomingTeamCardI) => {
   return (
     <div
       className={cn(styles.wrapper, {
@@ -12,10 +12,10 @@ const UpcomingTeamCard = ({ direction, odd, teamname }: UpcomingTeamCardI) => {
         [styles.right]: direction === 'right',
       })}>
       <div className={styles.imgContainer}>
-        <img className={styles.img} src="" alt="team logo" />
+        <img className={styles.img} src={img} alt="team logo" />
         <div className={styles.imgMask}>+</div>
       </div>
-      <div className={styles.teamInfo}>
+      <div className={styles.team}>
         <div className={styles.teamName}>{teamname}</div>
         <div className={styles.teamOdd}>{odd}</div>
       </div>
