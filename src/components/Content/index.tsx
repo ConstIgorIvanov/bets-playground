@@ -5,22 +5,7 @@ import UpcomingTeamCard from './components/UpcomingMatches/components/UpcomingTe
 import styles from './Content.module.scss';
 
 const Content = () => {
-  return (
-    <div className={styles.content}>
-      <UpcomingTeamCard
-        direction="left"
-        odd="1.2"
-        teamname="NaViNaViNaVi"
-        img="https://csgopositive.co/img/Zero_Tenacity.png"
-      />
-      <UpcomingTeamCard
-        direction="right"
-        odd="1.2"
-        teamname="NaViNaViNaVi"
-        img="https://csgopositive.co/img/Zero_Tenacity.png"
-      />
-    </div>
-  );
+  return <div className={styles.content}></div>;
 };
 
 export default Wrapper(Content);

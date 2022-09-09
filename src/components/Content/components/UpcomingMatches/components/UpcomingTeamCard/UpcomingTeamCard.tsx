@@ -8,15 +8,15 @@ const UpcomingTeamCard = ({ direction, odd, teamname, img }: UpcomingTeamCardI) 
   return (
     <div
       className={cn(styles.wrapper, {
-        [styles.left]: direction === 'left',
-        [styles.right]: direction === 'right',
+        [styles.left]: direction === 'team1',
+        [styles.right]: direction === 'team2',
       })}>
       <div className={styles.imgContainer}>
         <img className={styles.img} src={img} alt="team logo" />
         <div
           className={cn({
-            [styles.imgMaskLeft]: direction === 'left',
-            [styles.imgMaskRight]: direction === 'right',
+            [styles.imgMaskLeft]: direction === 'team1',
+            [styles.imgMaskRight]: direction === 'team2',
           })}>
           +
         </div>
