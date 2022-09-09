@@ -2,16 +2,24 @@
   width: auto;
   height: 60px;
   width: 180px;
+  cursor: pointer;
   position: relative;
   &:hover {
-    .imgMask {
-      transition: all 0.5s ease-in-out;
+    .imgMaskLeft,
+    .imgMaskRight {
+      transition: all 0.4s ease-in-out;
       transform: translateX(0) rotateY(0);
       opacity: 1;
+      width: 100%;
     }
-    .mask {
+    .imgContainer {
+      transition: all 0.4s ease-in-out;
+    }
+    .maskLeft,
+    .maskRight {
+      transition: all 0.4s ease-in-out;
       opacity: 1;
-      background: rgba(51, 170, 51, 0.1);
+      background: rgb(61, 81, 62);
     }
   }
 }
@@ -29,7 +37,7 @@
 
 .imgContainer {
   position: relative;
-
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,15 +50,32 @@
   height: 60px;
 }
 
-.imgMask {
+.imgMaskLeft {
+  z-index: 99;
   transition: all 0.15s ease-in-out;
-  background: rgba(51, 170, 51, 0.1);
+  background: rgb(37, 46, 43, 0.7);
+  border-radius: 4px;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  transform: translateX(-25%) rotateY(90deg);
+  width: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgMaskRight {
+  z-index: 99;
+  transition: all 0.15s ease-in-out;
+  background: rgb(37, 46, 43, 0.7);
   border-radius: 4px;
   position: absolute;
   opacity: 0;
   right: 0;
-  transform: translateX(-40%) rotateY(90deg);
-  width: 100%;
+  transform: translateX(25%) rotateY(-90deg);
+  width: 0;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -65,11 +90,28 @@
 }
 .teamName {
   margin-bottom: 10px;
+  z-index: 99;
 }
 .teamOdd {
   border-bottom: 1px solid #77bd4b;
+  z-index: 99;
 }
 
-.mask {
+.maskLeft {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgb(61, 81, 62);
+  border-radius: 8px;
+  opacity: 0;
+}
+.maskRight {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgb(61, 81, 62);
+  border-radius: 8px;
 }

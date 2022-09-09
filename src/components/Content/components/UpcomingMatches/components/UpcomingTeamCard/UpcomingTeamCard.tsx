@@ -13,13 +13,23 @@ const UpcomingTeamCard = ({ direction, odd, teamname, img }: UpcomingTeamCardI) 
       })}>
       <div className={styles.imgContainer}>
         <img className={styles.img} src={img} alt="team logo" />
-        <div className={styles.imgMask}>+</div>
+        <div
+          className={cn({
+            [styles.imgMaskLeft]: direction === 'left',
+            [styles.imgMaskRight]: direction === 'right',
+          })}>
+          +
+        </div>
       </div>
       <div className={styles.team}>
         <div className={styles.teamName}>{teamname}</div>
         <div className={styles.teamOdd}>{odd}</div>
       </div>
-      <div className={styles.mask}></div>
+      <div
+        className={cn({
+          [styles.maskLeft]: direction === 'left',
+          [styles.maskRight]: direction === 'right',
+        })}></div>
     </div>
   );
 };
