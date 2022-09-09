@@ -25,11 +25,7 @@ const UpcomingTeamCard = ({ direction, odd, teamname, img }: UpcomingTeamCardI) 
         <div className={styles.teamName}>{teamname}</div>
         <div className={styles.teamOdd}>{odd}</div>
       </div>
-      <div
-        className={cn({
-          [styles.maskLeft]: direction === 'left',
-          [styles.maskRight]: direction === 'right',
-        })}></div>
+      <div className={styles.mask}></div>
     </div>
   );
 };
