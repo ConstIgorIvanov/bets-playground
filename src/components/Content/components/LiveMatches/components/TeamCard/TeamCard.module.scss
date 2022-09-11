@@ -1,7 +1,6 @@
 .card {
   position: relative;
   height: 200px;
-  width: 135px;
   padding: 10px 8px;
   display: flex;
   flex-direction: column;
@@ -12,18 +11,22 @@
     overflow: hidden;
     margin: 8px auto 0;
     background: #2a2f36;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding: 8px;
     border-radius: 8px;
     transition: all 0.2s ease-in-out;
   }
-  // &__img {
-  // }
+
   &__name {
     margin: 8px 0;
     color: #fff;
     font-size: 14px;
     text-align: center;
+    max-width: 100px;
+    overflow: hidden;
+    height: 17px;
+    text-overflow: ellipsis;
   }
   &__odd {
     display: flex;
@@ -45,26 +48,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
 
-    &__text {
-      font-size: 14px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  &__img__wrapper {
+    position: relative;
+  }
+  &__img__mask {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 100%;
+    text-align: center;
 
     &__plus {
-      font-size: 24px;
+      margin-bottom: 2px;
+      font-size: 32px;
+    }
+
+    &__text {
+      font-size: 13px;
     }
   }
 
   &:hover {
     .card__imgContainer {
+      z-index: 98;
       filter: brightness(0.2);
     }
     .card__mask {
       opacity: 1;
       background: rgba(51, 170, 51, 0.1);
     }
+    .card__img__mask {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 1074px) {
+  .card__imgContainer {
+    width: 80px;
+    height: 80px;
   }
 }
