@@ -1,4 +1,5 @@
 .card {
+  cursor: pointer;
   position: relative;
   height: 200px;
   padding: 10px 8px;
@@ -21,18 +22,18 @@
   &__name {
     margin: 8px 0;
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
     max-width: 100px;
     overflow: hidden;
-    height: 17px;
+    height: 20px;
     text-overflow: ellipsis;
   }
   &__odd {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 13px;
+    font-size: 16px;
     border-bottom: 1px solid #77bd4b;
   }
 
@@ -88,8 +89,53 @@
 }
 
 @media (max-width: 1074px) {
+  .card__name {
+    max-width: 80px;
+  }
   .card__imgContainer {
     width: 80px;
     height: 80px;
+  }
+  .card {
+    height: 160px;
+  }
+}
+
+@media (max-width: 842px) {
+  .card__name {
+    max-width: 50px;
+  }
+  .card__imgContainer {
+    width: 50px;
+    height: 50px;
+  }
+  .card {
+    height: 130px;
+  }
+}
+
+@media (max-width: 650px) {
+  .card__name {
+    max-width: 80px;
+  }
+  .card__imgContainer {
+    width: 80px;
+    height: 80px;
+  }
+  .card {
+    height: 160px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card__name {
+    max-width: 50px;
+  }
+  .card__imgContainer {
+    width: 50px;
+    height: 50px;
+  }
+  .card {
+    height: 130px;
   }
 }
