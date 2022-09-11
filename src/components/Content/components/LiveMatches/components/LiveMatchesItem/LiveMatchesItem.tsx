@@ -1,11 +1,16 @@
 import React from 'react';
 
-import { LiveMatchesItem } from './LiveMatchesItem.props';
+import { LiveMatchesItemI } from './LiveMatchesItem.props';
 
 import styles from './LiveMatchesItem.module.scss';
 
-const MatchesItem = (props: LiveMatchesItem) => {
-  return <div className={styles.matches}>index</div>;
+const LiveMatchesItem = (props: LiveMatchesItemI) => {
+  return (
+    <div className={styles.liveMatchesItem}>
+      <div>index</div>
+      <div>index</div>
+    </div>
+  );
 };
 
-export default MatchesItem;
+export default LiveMatchesItem;

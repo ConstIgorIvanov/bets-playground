@@ -1,1 +1,1 @@
-export interface LiveMatchesItem {}
+export interface LiveMatchesItemI {}
