@@ -1,7 +1,28 @@
 .liveMatchesItem {
-  background: #2f353d;
-  height: 200px;
-  width: 620px;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  padding: 10px;
   border-radius: 2px;
-  clip-path: polygon(0 0, 100% 0, 99% 100%, 70% 100%, 68% 90%, 32% 90%, 30% 100%, 0 100%);
+  background: #2f353d;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 100%, 68% 93%, 32% 93%, 30% 100%, 0 100%);
+}
+
+.matchInfo {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.tournament {
+  font-size: 16px;
+}
+
+span > img {
+  width: 10px;
+}
+
+.format,
+.time {
+  margin-top: 10px;
+  color: #7d7f85;
 }
