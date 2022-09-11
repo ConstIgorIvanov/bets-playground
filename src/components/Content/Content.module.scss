@@ -1,0 +1,23 @@
+.content {
+  font-size: 14px;
+  background-color: #272b33;
+  border-radius: 4px;
+}
+
+.title {
+  display: inline-block;
+  text-transform: uppercase;
+  border-top-left-radius: 4px;
+  height: 25px;
+  font-size: 20px;
+
+  background: #2a2f36;
+  padding: 14px;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
