@@ -62,7 +62,7 @@
     opacity: 0;
     width: 100%;
     text-align: center;
-
+    transition: all 0.2s ease-in-out;
     &__plus {
       margin-bottom: 2px;
       font-size: 32px;
