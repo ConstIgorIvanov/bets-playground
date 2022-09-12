@@ -24,3 +24,10 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
 }
+
+.top {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pagination {
+}
