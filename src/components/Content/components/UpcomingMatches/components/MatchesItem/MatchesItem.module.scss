@@ -1,2 +1,32 @@
 .matchesItem {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 2px;
+  background: #2f353d;
+}
+
+.matchInfo {
+  text-align: center;
+}
+
+span > img {
+  width: 10px;
+}
+
+.format,
+.time {
+  margin-top: 10px;
+  color: #7d7f85;
+}
+@media (max-width: 1000px) {
+  .matchesItem {
+    font-size: 12px;
+  }
+}
+@media (max-width: 650px) {
+  .matchesItem {
+    font-size: 14px;
+  }
 }

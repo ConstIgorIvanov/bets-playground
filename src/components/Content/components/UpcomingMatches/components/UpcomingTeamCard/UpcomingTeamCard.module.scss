@@ -38,7 +38,7 @@
 .imgContainer {
   position: relative;
   display: flex;
-  align-items: center;
+
   justify-content: center;
 
   border-radius: 4px;
@@ -96,6 +96,10 @@
 }
 .teamName {
   margin-bottom: 10px;
+  max-width: 100px;
+  overflow: hidden;
+  height: 20px;
+  text-overflow: ellipsis;
 
   z-index: 99;
 }
@@ -116,4 +120,55 @@
   opacity: 0;
 
   z-index: 1;
+}
+
+@media (max-width: 1000px) {
+  .teamName {
+    max-width: 70px;
+  }
+
+  .wrapper {
+    width: 160px;
+  }
+}
+
+@media (max-width: 885px) {
+  .teamName {
+    max-width: 60px;
+  }
+
+  .wrapper {
+    width: 140px;
+  }
+}
+@media (max-width: 800px) {
+  .teamName {
+    max-width: 40px;
+  }
+
+  .wrapper {
+    width: 120px;
+  }
+}
+
+@media (max-width: 650px) {
+  .teamName {
+    max-width: 100px;
+  }
+
+  .wrapper {
+    width: 180px;
+  }
+}
+@media (max-width: 500px) {
+  .teamName {
+    max-width: 50px;
+  }
+  .img {
+    width: 60px;
+    height: 60px;
+  }
+  .wrapper {
+    width: 130px;
+  }
 }
