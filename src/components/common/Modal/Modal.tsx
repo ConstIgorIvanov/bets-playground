@@ -6,6 +6,7 @@ import { ModalI } from './Modal.props';
 const Modal = (props: ModalI) => {
   return (
     <div className={styles.modal__wrapper}>
+      <div className={styles.mask}></div>
       <div className={styles.modal}>
         <div className={styles.matchInfo}>
           <div className={styles.imgContainer}>
@@ -24,12 +25,24 @@ const Modal = (props: ModalI) => {
         <div className={styles.teamsInfo}>
           <div className={styles.teamInfo}>
             <div className={styles.teamName}>Sprout</div>
-            <div className={styles.teamStats}>Статистика Команды</div>
+            <div className={styles.teamStats}>
+              <div className={styles.player}>Игрок1</div>
+              <div className={styles.player}>Игрок2</div>
+              <div className={styles.player}>Игрок3</div>
+              <div className={styles.player}>Игрок4</div>
+              <div className={styles.player}>Игрок5</div>
+            </div>
             <div className={styles.teamOdd}>1.109</div>
           </div>
           <div className={styles.teamInfo}>
-            <div className={styles.teamName}>Sprout</div>
-            <div className={styles.teamStats}>Статистика Команды</div>
+            <div className={styles.teamName}>SproutSproutSprout</div>
+            <div className={styles.teamStats}>
+              <div className={styles.player}>Игрок1</div>
+              <div className={styles.player}>Игрок2</div>
+              <div className={styles.player}>Игрок3</div>
+              <div className={styles.player}>Игрок4</div>
+              <div className={styles.player}>Игрок5</div>
+            </div>
             <div className={styles.teamOdd}>1.109</div>
           </div>
         </div>

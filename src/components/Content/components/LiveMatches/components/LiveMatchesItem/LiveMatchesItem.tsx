@@ -16,6 +16,7 @@ const LiveMatchesItem = (props: LiveMatchesItemI) => {
         <span className={styles.tournament}>LEC</span>
         <div className={styles.format}>BO5</div>
         <div className={styles.time}>09:04:12</div>
+        <div className={styles.time}>0:1</div>
       </div>
       <TeamCard imageLink="https://csgopositive.co/img/G2.png" name="g2" odd="2" />
     </div>
