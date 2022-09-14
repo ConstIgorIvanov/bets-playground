@@ -8,9 +8,11 @@ import Filters from './components/Filters/Filters';
 
 const Header = () => {
   return (
-    <div className={styles.header}>
-      <Filters />
-      <Profile />
+    <div className="header">
+      <div className={styles.header}>
+        <Filters />
+        <Profile />
+      </div>
     </div>
   );
 };

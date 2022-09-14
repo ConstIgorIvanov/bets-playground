@@ -9,15 +9,9 @@ function App() {
   return (
     <div className="container">
       <Modal />
-      <div className="header">
-        <Header />
-      </div>
-      <div className="content">
-        <Content />
-      </div>
-      <div className="footer">
-        <Footer />
-      </div>
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
